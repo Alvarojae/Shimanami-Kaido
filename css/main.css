@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+#flex-index-container, #flex-index-container .flexTexto, #flex-index-container .flexImagenes {
+  display: flex;
+  flex-wrap: wrap; }
+
+/*
+Index
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #587ec5, #ff475760); }
+
+.TittleDef {
+  text-align: center;
+  font-size: 2rem;
+  color: #3d6936;
+  padding: 35px 0px 0px 0px; }
+
+.divFiller {
+  height: 280px; }
+
+.BackgroundImage {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/indexImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+  .BackgroundImage .textoBackground {
+    font-size: 3rem;
+    font-style: italic;
+    position: absolute;
+    color: black;
+    left: 0%;
+    top: 10%; }
+
+/*
+.backgroundColor{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(65deg, #6303B150, #587ec550);
+    transform: skewY(-160deg);
+    z-index:1;
+    position:absolute;
+    padding-top: 50px;
+}
+*/
+nav {
+  background-color: #587ec5;
+  width: 100%;
+  height: 70px;
+  font-style: italic; }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 20px; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 2.3rem;
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px; }
+        nav ul li a:hover {
+          background-color: #e0dddd;
+          color: #dd0b04;
+          border-radius: 10px; }
+
+#flex-index-container {
+  flex-direction: row; }
+  #flex-index-container .flexTexto {
+    flex-direction: column;
+    justify-content: left;
+    justify-content: center;
+    width: 50%; }
+    #flex-index-container .flexTexto h1, #flex-index-container .flexTexto p {
+      color: white;
+      padding-left: 20px; }
+  #flex-index-container .flexImagenes {
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 30%;
+    padding: 30px;
+    grid-template-columns: repeat(1, 2fr); }
+    #flex-index-container .flexImagenes .imagen1 {
+      width: 200px;
+      height: 300px;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: black;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-left: 20px; }
+      #flex-index-container .flexImagenes .imagen1 img {
+        width: 200px;
+        height: 300px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 10px;
+        border-color: #dd0b04; }
+        #flex-index-container .flexImagenes .imagen1 img:hover {
+          transform: scale(1.2); }
+      #flex-index-container .flexImagenes .imagen1 p {
+        position: relative;
+        bottom: 70px;
+        font-size: 2rem;
+        left: 55px;
+        color: #dd0b04; }
+    #flex-index-container .flexImagenes .imagen2 {
+      width: 200px;
+      height: 300px;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: black;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-left: 20px; }
+      #flex-index-container .flexImagenes .imagen2 img {
+        width: 200px;
+        height: 300px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 10px;
+        border-color: #dd0b04; }
+        #flex-index-container .flexImagenes .imagen2 img:hover {
+          transform: scale(1.2); }
+      #flex-index-container .flexImagenes .imagen2 p {
+        position: relative;
+        bottom: 70px;
+        font-size: 2rem;
+        left: 55px;
+        color: #dd0b04; }
+    #flex-index-container .flexImagenes .imagen3 {
+      width: 200px;
+      height: 300px;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: black;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-left: 20px; }
+      #flex-index-container .flexImagenes .imagen3 img {
+        width: 200px;
+        height: 300px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 10px;
+        border-color: #dd0b04; }
+        #flex-index-container .flexImagenes .imagen3 img:hover {
+          transform: scale(1.2); }
+      #flex-index-container .flexImagenes .imagen3 p {
+        position: relative;
+        bottom: 70px;
+        font-size: 2rem;
+        left: 55px;
+        color: #dd0b04; }
+    #flex-index-container .flexImagenes .imagen4 {
+      width: 200px;
+      height: 300px;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: black;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-left: 20px; }
+      #flex-index-container .flexImagenes .imagen4 img {
+        width: 200px;
+        height: 300px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 10px;
+        border-color: #dd0b04; }
+        #flex-index-container .flexImagenes .imagen4 img:hover {
+          transform: scale(1.2); }
+      #flex-index-container .flexImagenes .imagen4 p {
+        position: relative;
+        bottom: 70px;
+        font-size: 2rem;
+        left: 55px;
+        color: #dd0b04; }
+
+h2 {
+  padding: 10px;
+  text-align: center;
+  font-size: 32px; }
+
+.MapitaMain {
+  width: 100%;
+  height: 800px; }
+
+.VideoMain {
+  width: 100%;
+  height: 600px; }
+
+/*
+Circuito
+*/
+#demo, #demo1 {
+  height: 600px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+
+.carousel-inner {
+  border-radius: 10px; }
+
+.carousel-item img {
+  max-height: 600px;
+  min-width: 800px;
+  max-width: 800px;
+  min-height: 600px; }
+
+.FlechaMovimiento {
+  transform: scaleX(-1); }
+
+.carousel-indicators {
+  background-color: #00000020; }
+
+.carousel-caption {
+  color: #000000;
+  font-size: 1.5rem; }
+  .carousel-caption h3 {
+    font-size: 2rem; }
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #706b6b; }
+
+/*
+Contactenos
+*/
+.FormContactenos {
+  padding-left: 40px;
+  width: 500px;
+  overflow: auto;
+  display: inline-block;
+  margin-right: 30px; }
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.textArea1 {
+  display: inline-block;
+  position: relative;
+  bottom: 53px; }
+  .textArea1 textarea {
+    height: 297px;
+    width: 500px; }
+
+.btn {
+  height: 100%; }
+
+/*
+Vuelos
+*/
+.mapaVuelos {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #00000050; }
+  .mapaVuelos iframe {
+    width: 98%;
+    height: 900px; }
+
+.textInformation {
+  color: black;
+  padding: 10px; }
+  .textInformation div {
+    border-style: solid;
+    border-radius: 10px;
+    border-spacing: 10px;
+    border-color: #dd0b04; }
+    .textInformation div h1 {
+      padding-top: 10px;
+      padding-left: 30px;
+      color: white; }
+    .textInformation div p {
+      padding-left: 30px;
+      color: white; }

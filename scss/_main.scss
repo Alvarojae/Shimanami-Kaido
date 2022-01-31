@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+%claseConFlex{
+    display: flex;
+    flex-wrap: wrap;
+}     
+
+
+/*
+Index
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #587ec5, #ff475760, );
+}
+
+.TittleDef{
+    text-align: center;
+    font-size: $tamanoLetra;
+    color: #3d6936;
+    padding: 35px 0px 0px 0px;
+}
+.divFiller{
+    height: 280px;
+}
+.BackgroundImage{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/indexImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    //position: relative;
+
+    .textoBackground{
+        font-size: 3rem;
+        font-style:italic ;
+        position: map-get($map, aposition );
+        color: black;
+        left:0%;
+        top: 10%;
+        //z-index:1;
+        
+    }
+}
+/*
+.backgroundColor{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(65deg, #6303B150, #587ec550);
+    transform: skewY(-160deg);
+    z-index:1;
+    position:absolute;
+    padding-top: 50px;
+}
+*/  
+nav{
+    background-color: #587ec5;
+    width: $ancho;
+    height: 70px;
+    font-style: italic;
+    
+    ul{
+        list-style-type: none;
+        text-align: center;
+        padding-top: 20px;
+        
+        li{
+            display: inline-block;
+            margin-right: 2.3rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            
+            a{
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+                
+                &:hover{
+                    background-color: #e0dddd;
+                    color: #dd0b04;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+#flex-index-container{
+    @extend %claseConFlex;
+    flex-direction: row;
+    
+
+    .flexTexto{
+        @extend %claseConFlex;
+        flex-direction: column;
+        justify-content: left; 
+        justify-content: center;
+        width: 50%;
+        h1,p{
+            color: white;
+            padding-left: 20px;
+        }
+    }
+
+    .flexImagenes{
+        @extend %claseConFlex;   
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        width: 30%;
+        padding: 30px;
+        grid-template-columns: repeat(1, 2fr);
+        
+        .imagen1{
+            @include imagenes;
+        } 
+        .imagen2{
+            @include imagenes;
+        } 
+        .imagen3 {
+            @include imagenes;
+        }
+        .imagen4{
+            @include imagenes;
+        }
+    }     
+}
+
+h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.MapitaMain{
+    width: $ancho;
+    height: 800px;
+}
+
+.VideoMain{
+    width: $ancho;
+    height: 600px;   
+}
+
+/*
+Circuito
+*/
+
+#demo, #demo1{
+    height: 600px;
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+
+}
+.carousel-inner{
+    border-radius: 10px;
+}
+
+.carousel-item img{
+    max-height: 600px;
+    min-width: 800px;
+    max-width: 800px;
+    min-height: 600px;
+}
+
+.FlechaMovimiento{
+    transform: scaleX(-1);
+}
+
+.carousel-indicators{
+    background-color: #00000020;   
+}
+
+.carousel-caption{
+    color: #000000;
+    font-size: 1.5rem;
+    
+    h3{
+        font-size: $tamanoLetra;
+    }
+}
+
+.carousel-control-prev, .carousel-control-next{
+    &:hover{
+        background-color: #706b6b;
+    } 
+}
+
+/*
+Contactenos
+*/
+
+.FormContactenos{
+    padding-left: 40px; 
+    width: 500px;
+    overflow: auto;
+    display: inline-block;
+    margin-right:30px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.textArea1{
+    display: inline-block;
+    position: map-get($map, rposition );
+    bottom: 53px;
+    
+    textarea{
+        height:297px;
+        width: 500px;
+    }
+}
+
+.btn{
+    height: 100%;
+}
+
+/*
+Vuelos
+*/
+.mapaVuelos{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #00000050;
+
+    iframe{
+        width:98%;
+        height:900px;
+    }
+}
+
+
+.textInformation{
+    color: black;
+    padding: 10px;
+
+    div{
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 10px;
+        border-color: #dd0b04;
+        
+        h1{
+            padding-top: 10px;
+            padding-left: 30px;
+            color: white;
+        }
+        p{
+            padding-left: 30px;
+            color: white;
+        }
+    }
+}
