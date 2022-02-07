@@ -80,7 +80,7 @@ nav{
 nav .active a {
     background-color: #e0dddd;
     color: #dd0b04;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 //Nav, Icon and footer Mobile
@@ -112,7 +112,8 @@ nav .active a {
 
     #footer{
         p{
-            font-size: 0.80rem;
+            font-size: 0.60rem;
+            bottom: 0;
         }
     }
 
@@ -295,6 +296,7 @@ legend{
 
 .alert-warning{
     padding-bottom: 10px;
+    width: 100%;
 }
     
 .divFiller{
@@ -309,11 +311,13 @@ legend{
         padding-left: 40px; 
         font-size: 1.1rem;
     }
-    .formComentarios{
-        .textArea1{
-            padding-left: 40px;
-        }
-    }     
+
+    #exampleFormControlTextarea1{
+        width: 342px;  
+    }
+    .divFiller{
+        height: 50px;
+    }
 }
 
 

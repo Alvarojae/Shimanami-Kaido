@@ -65,7 +65,7 @@ nav {
 nav .active a {
   background-color: #e0dddd;
   color: #dd0b04;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 @media all and (max-width: 769px) {
   nav ul {
@@ -84,7 +84,8 @@ nav .active a {
       width: 40px;
       padding-top: 5px; }
   #footer p {
-    font-size: 0.80rem; } }
+    font-size: 0.60rem;
+    bottom: 0; } }
 
 .BackgroundImage {
   width: 100%;
@@ -299,7 +300,8 @@ legend {
   height: 100%; }
 
 .alert-warning {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  width: 100%; }
 
 .divFiller {
   height: 303px; }
@@ -308,8 +310,10 @@ legend {
   legend {
     padding-left: 40px;
     font-size: 1.1rem; }
-  .formComentarios .textArea1 {
-    padding-left: 40px; } }
+  #exampleFormControlTextarea1 {
+    width: 342px; }
+  .divFiller {
+    height: 50px; } }
 
 /*
 Vuelos
