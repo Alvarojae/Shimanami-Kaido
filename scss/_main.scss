@@ -7,7 +7,7 @@
 
 
 /*
-Index
+Index test
 */
 
 *{
@@ -18,7 +18,24 @@ Index
 body{
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(180deg, #587ec5, #ff475760, );
+    background: linear-gradient(180deg, #587ec5, #ff475760);
+}
+
+
+.icon{
+    height: 60px;
+    width: 80px;
+    border-style: solid;
+    border-color: #ff4757;
+    border-radius: 40px;
+    position:absolute;
+    top: 5px;
+    left:15px;
+    img{  
+        height: 48px;
+        width: 60px;
+        padding-top: 5px;  
+    }
 }
 
 .TittleDef{
@@ -27,9 +44,80 @@ body{
     color: #3d6936;
     padding: 35px 0px 0px 0px;
 }
-.divFiller{
-    height: 280px;
+
+nav{
+    display: block;
+    background-color: #587ec5;
+    width: $ancho;
+    height: 70px;
+    font-style: italic;
+    border-style: solid;
+    border-color: #587ec5;
+    border-bottom-color:#dd0b0450 ;
+    ul{
+        list-style-type: none;
+        text-align: center;
+        padding-top: 15px;
+        li{
+            display: inline-block;
+            margin-right: 2.3rem;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            a{
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+                &:hover{
+                    background-color: #e0dddd;
+                    color: #dd0b04;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }
+
+nav .active a {
+    background-color: #e0dddd;
+    color: #dd0b04;
+    border-radius: 10px;
+}
+
+//Nav, Icon and footer Mobile
+@media all and (max-width: 769px){      
+    nav{
+        ul{
+            //list-style-type: none;
+            //text-align: center;
+            padding-top: 3%;
+            li{
+                display: inline-block;
+                margin-right: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .icon{
+        height: 40px;
+        width: 60px;
+        top: 15px;
+        left:5px;
+        img{  
+            height: 28px;
+            width: 40px;
+            padding-top: 5px;  
+        }
+    }
+
+    #footer{
+        p{
+            font-size: 0.80rem;
+        }
+    }
+
+}
+
 .BackgroundImage{
     width: 100%;
     height: 500px;
@@ -38,59 +126,13 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    //position: relative;
-
     .textoBackground{
         font-size: 3rem;
         font-style:italic ;
         position: map-get($map, aposition );
-        color: black;
+        color: #ff4757;
         left:0%;
         top: 10%;
-        //z-index:1;
-        
-    }
-}
-/*
-.backgroundColor{
-    width: 100%;
-    height: 700px;
-    background-image: linear-gradient(65deg, #6303B150, #587ec550);
-    transform: skewY(-160deg);
-    z-index:1;
-    position:absolute;
-    padding-top: 50px;
-}
-*/  
-nav{
-    background-color: #587ec5;
-    width: $ancho;
-    height: 70px;
-    font-style: italic;
-    
-    ul{
-        list-style-type: none;
-        text-align: center;
-        padding-top: 20px;
-        
-        li{
-            display: inline-block;
-            margin-right: 2.3rem;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            
-            a{
-                text-decoration: none;
-                color: white;
-                padding: 5px;
-                
-                &:hover{
-                    background-color: #e0dddd;
-                    color: #dd0b04;
-                    border-radius: 10px;
-                }
-            }
-        }
     }
 }
 
@@ -151,6 +193,15 @@ h2{
     height: 600px;   
 }
 
+//INDEX MOBILE 
+//@media all and (max-width: 769px){      
+
+//}
+
+
+
+
+
 /*
 Circuito
 */
@@ -200,34 +251,72 @@ Circuito
 /*
 Contactenos
 */
-
-.FormContactenos{
+  
+legend{
     padding-left: 40px; 
-    width: 500px;
-    overflow: auto;
-    display: inline-block;
-    margin-right:30px;
 }
 
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.textArea1{
-    display: inline-block;
-    position: map-get($map, rposition );
-    bottom: 53px;
-    
-    textarea{
-        height:297px;
+.flexForm
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    //justify-content: center;
+    .FormContactenos{
+        padding-left: 40px; 
         width: 500px;
+        overflow: auto;
+        display: inline-block;
+        margin-right:30px;
+    }
+    
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+  
+    .formComentarios{
+        .textArea1{
+            position: map-get($map, rposition );
+            padding-left: 40px;
+            textarea{
+                height:297px;
+                width: 460px;
+                resize: none;
+            }
+        }
     }
 }
-
-.btn{
+    
+.buttonEnviar{
+    padding: 0px 0px 20px 40px;
     height: 100%;
 }
+
+.alert-warning{
+    padding-bottom: 10px;
+}
+    
+.divFiller{
+    height: 303px;
+}
+    
+    
+//Informacion Mobile
+@media all and (max-width: 769px){  
+
+    legend{
+        padding-left: 40px; 
+        font-size: 1.1rem;
+    }
+    .formComentarios{
+        .textArea1{
+            padding-left: 40px;
+        }
+    }     
+}
+
+
 
 /*
 Vuelos
@@ -266,3 +355,86 @@ Vuelos
         }
     }
 }
+
+
+/* 
+Infomracion
+*/
+
+#flipFlex{
+    @extend %claseConFlex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 600px;
+    height: 510px;
+    perspective: 1000px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+   
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 10px;
+        border-color: #dd0b0450;
+        
+
+        .flip-card-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-color: linear-gradient(180deg, #587ec5, #ff475760);;
+            color: white;
+            h1{
+                padding-top: 200px;
+            }
+        }
+        
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-color: #587ec5;
+            color: white;
+            transform: rotateY(180deg);
+            
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+ 
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+
+
+
+
+
+
+//Informacion Mobile
+@media all and (max-width: 769px){  
+    .flip-card  { .flip-card-inner { .flip-card-back {  p{ font-size: 1.5rem; } } } } 
+}
+

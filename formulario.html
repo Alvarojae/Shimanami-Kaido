@@ -16,65 +16,72 @@
 <body>
     <nav>
         <ul>
+            <a class="icon" href="index.html"><img src="img/bici icon.png" alt="icon"></a>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="informacion.html">Informacion </a></li>
             <li><a href="circuito.html">Circuito </a></li>
             <li><a href="vuelos.html">Vuelos </a></li>
-            <li><a href="formulario.html">Contactenos</a></li>
+            <li class="active"><a href="formulario.html">Contactenos</a></li>
         </ul>
     </nav>
     <main>
         <form action="">
             <fieldset>
                 <form action="/action_page.php">
-                    <div class="FormContactenos">
-                        <legend>Si queres que te contactemos para brindarle mas informacion</legend>
+                    <legend>Si queres que te contactemos para brindarle mas informacion</legend>
 
-                        <div class="mb-3">
-                            <label for="Nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="Nombre" placeholder="Ingresar Nombre"
+                    <div class="flexForm">
+
+                        <div class="FormContactenos">
+                            
+                            <div class="mb-3">
+                                <label for="Nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="Nombre" placeholder="Ingresar Nombre"
                                 name="Nombre">
-                        </div>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="Apellido" class="form-label">Apellido:</label>
-                            <input type="text" class="form-control" id="Apellido" placeholder="Ingresar Apellido"
+                            <div class="mb-3">
+                                <label for="Apellido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="Apellido" placeholder="Ingresar Apellido"
                                 name="Apellido">
-                        </div>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="Correo" class="form-label">Correo:</label>
-                            <input type="email" class="form-control" id="Correo" placeholder="Ingresar Correo"
+                            <div class="mb-3">
+                                <label for="Correo" class="form-label">Correo:</label>
+                                <input type="email" class="form-control" id="Correo" placeholder="Ingresar Correo"
                                 name="Correo">
-                        </div>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="Telefono" class="form-label">Telefono:</label>
-                            <input type="number" class="form-control" id="Telefono" placeholder="Ingresar Telefono"
+                            <div class="mb-3">
+                                <label for="Telefono" class="form-label">Telefono:</label>
+                                <input type="number" class="form-control" id="Telefono" placeholder="Ingresar Telefono"
                                 name="Telefono ">
+                            </div>
                         </div>
 
+                        <div class="formComentarios">
+                            <div class="textArea1 mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Ingresar Comentarios"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttonEnviar">
                         <button type="submit" disabled class="btn btn-primary">Enviar</button>
                     </div>
-
-                    <div class="textArea1 mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Ingresar Comentarios"></textarea>
-                    </div>
-
+                    
                     <div class="alert alert-warning">
                         <strong>Alerta!</strong> Pagina en construccion, estara habilitada dentro de poco.
                     </div>
+
                 </form>
             </fieldset>
         </form>
-
-        <div class="divFiller">
-
-        </div>
+        <div class="divFiller"></div>
     </main>
-    <footer id="footer"> Copyright - Todos los derechos reservados. - desarrollado por: Juan Alvaro Elena</footer>
+    <footer id="footer"> <p> Copyright - Todos los derechos reservados. - desarrollado por: Juan Alvaro Elena </p> </footer>
 </body>
 
 </html>
