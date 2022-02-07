@@ -4,7 +4,7 @@
   flex-wrap: wrap; }
 
 /*
-Index test
+All pages 
 */
 * {
   margin: 0;
@@ -74,6 +74,10 @@ nav .active a {
       display: inline-block;
       margin-right: 0.5rem;
       font-size: 1rem; }
+      nav ul li a {
+        padding: 5px; }
+        nav ul li a:hover {
+          padding: 2px; }
   .icon {
     height: 40px;
     width: 60px;
@@ -85,7 +89,12 @@ nav .active a {
       padding-top: 5px; }
   #footer p {
     font-size: 0.60rem;
-    bottom: 0; } }
+    bottom: 0; }
+  nav .active a {
+    background-color: #e0dddd;
+    color: #dd0b04;
+    padding: 3px;
+    border-radius: 6px; } }
 
 .BackgroundImage {
   width: 100%;
@@ -102,7 +111,14 @@ nav .active a {
     color: #ff4757;
     left: 0%;
     top: 10%; }
+  .BackgroundImage nav .active a {
+    background-color: #e0dddd;
+    color: #dd0b04;
+    border-radius: 1px; }
 
+/*
+Index 
+*/
 #flex-index-container {
   flex-direction: row; }
   #flex-index-container .flexTexto {
@@ -226,20 +242,123 @@ h2 {
   text-align: center;
   font-size: 32px; }
 
-.MapitaMain {
-  width: 100%;
-  height: 800px; }
-
-.VideoMain {
+.VideoInformacion iframe {
   width: 100%;
   height: 600px; }
+
+@media all and (max-width: 769px) {
+  #flex-index-container {
+    flex-direction: column; }
+    #flex-index-container .flexTexto {
+      padding-top: 20px;
+      width: 100%;
+      justify-content: center; }
+  #flex-index-container .flexImagenes {
+    width: 100%;
+    padding: 30px; }
+    #flex-index-container .flexImagenes .imagen1 {
+      width: 100px;
+      height: 300px;
+      padding: 2px;
+      box-sizing: border-box;
+      margin-right: 60px;
+      margin-left: 0px; }
+      #flex-index-container .flexImagenes .imagen1 img {
+        width: 150px;
+        height: 280px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 5px;
+        border-color: #dd0b0495;
+        box-shadow: 1px 1px #00000050, -0.5em 0 .2em #00000050; }
+        #flex-index-container .flexImagenes .imagen1 img:hover {
+          box-shadow: 4px 4px #00000050, -1em 0 .3em #00000050;
+          transform: scale(1.05); }
+      #flex-index-container .flexImagenes .imagen1 p {
+        position: relative;
+        font-size: 2rem;
+        bottom: 70px;
+        left: 25px;
+        color: #dd0b04; }
+    #flex-index-container .flexImagenes .imagen2 {
+      width: 100px;
+      height: 300px;
+      padding: 2px;
+      box-sizing: border-box;
+      margin-right: 60px;
+      margin-left: 0px; }
+      #flex-index-container .flexImagenes .imagen2 img {
+        width: 150px;
+        height: 280px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 5px;
+        border-color: #dd0b0495;
+        box-shadow: 1px 1px #00000050, -0.5em 0 .2em #00000050; }
+        #flex-index-container .flexImagenes .imagen2 img:hover {
+          box-shadow: 4px 4px #00000050, -1em 0 .3em #00000050;
+          transform: scale(1.05); }
+      #flex-index-container .flexImagenes .imagen2 p {
+        position: relative;
+        font-size: 2rem;
+        bottom: 70px;
+        left: 25px;
+        color: #dd0b04; }
+    #flex-index-container .flexImagenes .imagen3 {
+      width: 100px;
+      height: 300px;
+      padding: 2px;
+      box-sizing: border-box;
+      margin-right: 60px;
+      margin-left: 0px; }
+      #flex-index-container .flexImagenes .imagen3 img {
+        width: 150px;
+        height: 280px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 5px;
+        border-color: #dd0b0495;
+        box-shadow: 1px 1px #00000050, -0.5em 0 .2em #00000050; }
+        #flex-index-container .flexImagenes .imagen3 img:hover {
+          box-shadow: 4px 4px #00000050, -1em 0 .3em #00000050;
+          transform: scale(1.05); }
+      #flex-index-container .flexImagenes .imagen3 p {
+        position: relative;
+        font-size: 2rem;
+        bottom: 70px;
+        left: 25px;
+        color: #dd0b04; }
+    #flex-index-container .flexImagenes .imagen4 {
+      width: 100px;
+      height: 300px;
+      padding: 2px;
+      box-sizing: border-box;
+      margin-right: 60px;
+      margin-left: 0px; }
+      #flex-index-container .flexImagenes .imagen4 img {
+        width: 150px;
+        height: 280px;
+        border-style: solid;
+        border-radius: 10px;
+        border-spacing: 5px;
+        border-color: #dd0b0495;
+        box-shadow: 1px 1px #00000050, -0.5em 0 .2em #00000050; }
+        #flex-index-container .flexImagenes .imagen4 img:hover {
+          box-shadow: 4px 4px #00000050, -1em 0 .3em #00000050;
+          transform: scale(1.05); }
+      #flex-index-container .flexImagenes .imagen4 p {
+        position: relative;
+        font-size: 2rem;
+        bottom: 70px;
+        left: 25px;
+        color: #dd0b04; } }
 
 /*
 Circuito
 */
 #demo, #demo1 {
   height: 600px;
-  width: 800px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px; }
@@ -249,9 +368,9 @@ Circuito
 
 .carousel-item img {
   max-height: 600px;
-  min-width: 800px;
-  max-width: 800px;
-  min-height: 600px; }
+  min-height: 600px;
+  min-width: 1200px;
+  max-width: 1200px; }
 
 .FlechaMovimiento {
   transform: scaleX(-1); }
@@ -267,6 +386,35 @@ Circuito
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
   background-color: #706b6b; }
+
+.MapitaMain {
+  width: 100%;
+  height: 800px;
+  padding-top: 40px; }
+
+.informacionImagenesRecorrido {
+  color: white;
+  padding-left: 600px; }
+
+@media all and (max-width: 769px) {
+  #demo, #demo1 {
+    height: 500px;
+    width: 90%; }
+  .carousel-item img {
+    min-height: 500px;
+    min-width: 300%; }
+  .carousel-inner {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px; }
+  .informacionImagenesRecorrido {
+    font-size: 1.2rem;
+    padding-left: 25px; }
+  .carousel-caption {
+    color: #000000;
+    font-size: 1.0rem; }
+    .carousel-caption h3 {
+      font-size: 2rem; } }
 
 /*
 Contactenos
@@ -313,7 +461,7 @@ legend {
   #exampleFormControlTextarea1 {
     width: 342px; }
   .divFiller {
-    height: 50px; } }
+    height: 20px; } }
 
 /*
 Vuelos
@@ -344,7 +492,7 @@ Vuelos
       color: white; }
 
 /* 
-Infomracion
+Informacion
 */
 #flipFlex {
   flex-direction: row;
@@ -398,4 +546,4 @@ Infomracion
 
 @media all and (max-width: 769px) {
   .flip-card .flip-card-inner .flip-card-back p {
-    font-size: 1.5rem; } }
+    font-size: 1.3rem; } }
