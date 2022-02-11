@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-#flex-index-container, #flex-index-container .flexTexto, #flex-index-container .flexImagenes, #flipFlex {
+#flex-index-container, #flex-index-container .flexTexto, #flex-index-container .flexImagenes, #flipFlex, #videoFlex, #videoFlex .textoInformacion, #videoFlex .videoInformacion {
   display: flex;
   flex-wrap: wrap; }
 
@@ -76,8 +76,6 @@ nav .active a {
       font-size: 1rem; }
       nav ul li a {
         padding: 5px; }
-        nav ul li a:hover {
-          padding: 2px; }
   .icon {
     height: 40px;
     width: 60px;
@@ -242,10 +240,6 @@ h2 {
   text-align: center;
   font-size: 32px; }
 
-.VideoInformacion iframe {
-  width: 100%;
-  height: 600px; }
-
 @media all and (max-width: 769px) {
   #flex-index-container {
     flex-direction: column; }
@@ -385,7 +379,7 @@ Circuito
     font-size: 2rem; }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
-  background-color: #706b6b; }
+  background-color: #706b6b50; }
 
 .MapitaMain {
   width: 100%;
@@ -544,6 +538,43 @@ Informacion
 .flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg); }
 
+#videoFlex {
+  flex-direction: row; }
+  #videoFlex .textoInformacion {
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 50px; }
+    #videoFlex .textoInformacion p {
+      color: white;
+      padding: 20px; }
+  #videoFlex .videoInformacion {
+    align-content: center;
+    padding-top: 50px; }
+    #videoFlex .videoInformacion iframe {
+      width: 790px;
+      height: 500px; }
+
 @media all and (max-width: 769px) {
-  .flip-card .flip-card-inner .flip-card-back p {
-    font-size: 1.3rem; } }
+  #flipFlex {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 30px; }
+    #flipFlex .flip-card {
+      justify-content: center; }
+      #flipFlex .flip-card .flip-card-inner .flip-card-back p {
+        font-size: 1.3rem; }
+  #videoFlex {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; }
+    #videoFlex .textoInformacion {
+      width: 100%; }
+    #videoFlex .videoInformacion {
+      padding-top: 0px;
+      width: 100%;
+      justify-content: center; }
+      #videoFlex .videoInformacion iframe {
+        width: 95%;
+        height: 300px; } }

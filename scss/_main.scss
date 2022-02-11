@@ -20,7 +20,6 @@ body{
     background: linear-gradient(180deg, #587ec5, #ff475760);
 }
 
-
 .icon{
     height: 60px;
     width: 80px;
@@ -95,10 +94,6 @@ nav .active a {
                 font-size: 1rem;
                 a{
                     padding: 5px;
-                    &:hover{
-                        padding: 2px; 
-                    }
-
                 }
             }
         }
@@ -121,14 +116,12 @@ nav .active a {
             bottom: 0;
         }
     }
-
     nav .active a {
         background-color: #e0dddd;
         color: #dd0b04;
         padding: 3px;
         border-radius: 6px;
     }
-
 }
 
 .BackgroundImage{
@@ -147,7 +140,6 @@ nav .active a {
         left:0%;
         top: 10%;
     }
-
     nav .active a {
         background-color: #e0dddd;
         color: #dd0b04;
@@ -155,17 +147,14 @@ nav .active a {
     }
 }
 
-
 /*
 Index 
 */
-
 
 #flex-index-container{
     @extend %claseConFlex;
     flex-direction: row;
     
-
     .flexTexto{
         @extend %claseConFlex;
         flex-direction: column;
@@ -208,13 +197,7 @@ h2{
     font-size: 32px;
 }
 
-.VideoInformacion{
-    iframe{
-        width: $ancho;
-        height: 600px;
-    }
-       
-}
+
 
 //INDEX MOBILE 
 
@@ -295,7 +278,7 @@ Circuito
 
 .carousel-control-prev, .carousel-control-next{
     &:hover{
-        background-color: #706b6b;
+        background-color: #706b6b50;
     } 
 }
 
@@ -310,7 +293,8 @@ Circuito
     color: white;
     padding-left: 600px;
 }
-//Circuito Informacion
+
+//Circuito 
 @media all and (max-width: 769px){
     #demo, #demo1{
         height: 500px;
@@ -525,8 +509,81 @@ Informacion
 }
 
 
+#videoFlex
+{
+    @extend %claseConFlex;
+    flex-direction: row;
+    .textoInformacion
+    {
+        @extend %claseConFlex;   
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        width: 40%;
+        padding-top: 50px;
+
+        p{
+            color: white;
+            padding: 20px;
+        }
+    }
+
+    .videoInformacion{ 
+        @extend %claseConFlex; 
+        align-content: center;
+        padding-top: 50px;
+        iframe{
+            width: 790px;
+            height: 500px;
+            
+        }
+           
+    }
+}
+
+
+
+
 //Informacion Mobile
 @media all and (max-width: 769px){  
-    .flip-card  { .flip-card-inner { .flip-card-back {  p{ font-size: 1.3rem; } } } } 
+    #flipFlex
+    {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 30px;
+
+        .flip-card {
+            justify-content: center;
+            .flip-card-inner{ 
+                .flip-card-back{
+                    p{
+                        font-size: 1.3rem; 
+                    } 
+                } 
+            } 
+        } 
+    }
+  
+    
+    #videoFlex{
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        .textoInformacion
+        {
+            width: 100%;
+        }
+        
+
+        .videoInformacion{
+            padding-top: 0px;
+            width: 100%;
+            justify-content: center;
+            iframe{
+                width: 95%;
+                height: 300px
+            }
+        }
+    }
 }
 
