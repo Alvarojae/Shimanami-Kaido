@@ -103,6 +103,7 @@ nav .active a {
   background-attachment: fixed;
   background-position: center; }
   .BackgroundImage .textoBackground {
+    padding: 0px;
     font-size: 3rem;
     font-style: italic;
     position: absolute;
@@ -376,7 +377,10 @@ Circuito
   color: #000000;
   font-size: 1.5rem; }
   .carousel-caption h3 {
+    color: #ff4757;
     font-size: 2rem; }
+  .carousel-caption p {
+    color: #ff4757; }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
   background-color: #706b6b50; }
@@ -396,7 +400,8 @@ Circuito
     width: 90%; }
   .carousel-item img {
     min-height: 500px;
-    min-width: 300%; }
+    min-width: auto;
+    position: absolute; }
   .carousel-inner {
     height: 500px;
     width: 100%;
